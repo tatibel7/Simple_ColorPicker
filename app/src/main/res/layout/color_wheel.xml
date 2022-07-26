@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".ColorWheel"> <!-- child views displayed in column -->
+
+    <!--android:src sets drawable (image) as content of ImageView -->
+
+    <!-- this view will display the color values extracted from color wheel. -->
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lobster"
+        android:text="Pick Your Color!"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lobster"
+        android:text="Touch and drag your finger across the color wheel."
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/colorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:padding="20dp"
+        android:src="@drawable/regularwheel" />
+
+    <TextView
+        android:id="@+id/displayValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/convergence"
+        android:textSize="24sp" />
+    <!-- gravity specifies how component should be placed in group of cells. -->
+
+    <!-- this view will display the color extracted from colorwheel -->
+    <View
+        android:id="@+id/displayColor"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+</LinearLayout>
